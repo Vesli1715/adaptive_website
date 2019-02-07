@@ -17,6 +17,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding: 15px;
 }
 .graficlogo {
 	padding: 5px;
@@ -65,6 +66,61 @@ nav {
 	width: 30%;
 }
 
+footer {
+	width: 100%;
+	height: auto;
+	background: black;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+}
+footer p {
+	color: white;
+}
+footer a {
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+}
+footer nav a:hover{
+	border-bottom: 1px solid white;
+}
+.social img {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+}
+.social img:hover { 
+	background-color: lightgrey;
+}
+
+.gallery {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.gallery img {
+	height: 167px;
+	width: 250px;
+	background: lightgrey;
+}
+.photo-items {
+	width: 25%;
+}
+.photo-items img{
+	box-sizing: border-box;
+	max-width: 100%;
+	opacity: 0.7; /*прозорість картинки*/
+}
+.photo-items img:hover {
+	opacity: 1;
+}
+
+
 
 /*все для екрнів менше 768px*/
 @media screen and (max-width: 768px){
@@ -97,6 +153,10 @@ nav {
 	.advantages__items{
 	width: 45%;
 	}
+	.photo-items {
+		width: 45%;
+		margin-left: 10px;
+	}
 }
 @media screen and (max-width: 420px) {
 	.advantages {
@@ -104,5 +164,18 @@ nav {
 	}
 	.advantages__items {
 		width: 100%;
+	}
+	.project {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	.gallery {
+		width: auto;
+		margin-top: 10px;
+	}
+	.photo-items{
+		width: 70%;
+		margin: 0 auto;
 	}
 }
